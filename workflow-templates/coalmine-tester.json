@@ -3,6 +3,6 @@
     "description": "coalmine tester CI starter workflow.",
     "iconName": "octicon beaker",
     "categories": [
-        "Go"
+        "continuous-integration"
     ]
 }
