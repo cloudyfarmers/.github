@@ -1,13 +1,6 @@
-name: Canary Workflow
-on: workflow_call
+name: Use Canary Workflow
+on: workflow_dispatch
 
 jobs:
-  canary-job:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Check out the repository
-        uses: actions/checkout@v2
-        # uses: ./.github/workflows/actions/checkout/action.yml
-
-      - name: Example step
-        run: echo "This is the reusable canary workflow running"
+  call-canary-workflow:
+    uses: cloudyfarmers/p-shared-devsecops/.github/workflows/canary-workflow.yml@main
