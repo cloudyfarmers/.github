@@ -1,0 +1,8 @@
+jobs:
+  ReuseableMatrixJobForDeployment:
+    strategy:
+      matrix:
+        target: [dev, stage, prod]
+    uses: octocat/octo-repo/.github/workflows/deployment.yml@main
+    with:
+      target: ${{ matrix.target }}
