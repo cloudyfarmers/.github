@@ -1,5 +1,8 @@
+name: Wasp
+on: workflow_dispatch
+
 jobs:
-  ReuseableMatrixJobForDeployment:
+  ReuseableMatrixJobForDeploymentWasp:
     strategy:
       matrix:
         target: [dev, stage, prod]
