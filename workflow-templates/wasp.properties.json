@@ -1,0 +1,8 @@
+{
+    "name": "wasp runner",
+    "description": "testing starter flow stuff.",
+    "iconName": "octicon beaker",
+    "categories": [
+        "continuous-integration"
+    ]
+}
