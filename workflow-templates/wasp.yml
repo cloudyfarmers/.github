@@ -3,6 +3,6 @@ jobs:
     strategy:
       matrix:
         target: [dev, stage, prod]
-    uses: octocat/octo-repo/.github/workflows/deployment.yml@main
+    uses: cloudyfarmers/p-shared-devsecops/.github/workflows/canary-workflow.yml@main
     with:
       target: ${{ matrix.target }}
